@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lista 02 | questão 05</title>
+  </head>
+
+  <body>
+
+    <script>
+
+      // Dado o seguinte vetor de objetos:
+      // var usuarios = [{
+      // nome: "Gabriel",
+      // habilidades: ["Javascript", "ReactJS", "Redux"]
+      // },
+      // {
+      // nome: "Lara",
+      // habilidades: ["JAVA", "PHP", "Laravel"]
+      // }];
+      // Escreva uma função que retorne o seguinte resultado:
+      // O Gabriel possui as habilidades: Javascript, ReactJS, Redux
+      // A Lara possui as habilidades: JAVA, PHP, Laravel
+      // Dica: Para percorrer um vetor você deve utilizar a sintaxe for…of e
+      // para unir valores de um array com um separador utilize o join.
+
+      var usuarios = [
+        {
+          nome: "Gabriel",
+          habilidades: ["JavaScript", "ReactJS", "Redux"],
+        },
+        {
+          nome: "Lara",
+          habilidades: ["JAVA", "PHP", "Laravel"],
+        },
+      ];
+
+      //  console.log(usuarios[0].nome + usuarios[0].habilidades+ usuarios[1].nome)
+
+      for (let user of usuarios) {
+        console.log(
+          "O usuario " +
+            user.nome +
+            " possui as habilidades: " +
+            user.habilidades.join(" - ")
+        );
+      }
+
+    </script>
+    
+  </body>
+</html>

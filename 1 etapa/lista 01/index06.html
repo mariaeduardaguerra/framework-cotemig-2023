@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>lista 01 | questão 06</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+
+    <style>
+
+        body {
+            text-align: center;
+        }
+        .container {
+            margin-top: 23%;
+        }
+        .container > ul {
+            display: flex;
+            justify-content: space-around;
+            gap: 6rem;
+            list-style: none;
+            text-align: center;
+        }
+
+    </style>
+
+        <p>6 - Faça um script que contenha um menu de seleção deste exercício e execute os mesmos
+            mediante seleção: Ex. selecionei 1, deve executar a primeira atividade e assim por diante.</p>
+
+        <div class="container">
+            <ul>
+                <li>
+                    <button onclick="questao01()">Questão 01</button>
+                </li>
+                <li>
+                    <button onclick="questao02()">Questão 02</button>
+                </li>
+                <li>
+                    <button onclick="questao03()">Questão 03</button>
+                </li>
+                <li>
+                    <button onclick="questao04()">Questão 04</button>
+                </li>
+                <li>
+                    <button onclick="questao05()">Questão 05</button>
+                </li>
+                <li>
+                    <button onclick="questao06()">Questão 06</button>
+                </li>
+            </ul>
+        </div>
+
+
+    <script src='script.js'>
+
+        function questao01()
+        {
+            var nome, salario, calcular01;
+            var nome = prompt("Digite seu nome:");
+            var salario = prompt("Digite seu salário:");
+
+            calcular01 = (10 / 100);
+            calcular02 = calcular01 + 1;
+
+            var resultado = calcular02 * salario;
+
+            console.log("Seu novo salário é " + resultado);
+        }
+
+        function questao02()
+        {
+            var a = parseInt(prompt("Digite um número:"));
+            var b = parseInt(prompt("Digite um número:"));
+
+            if(a == b)
+            {
+                c = a + b;
+            }
+            else
+            {
+                c = a * b;
+            }
+
+            alert("O valor total é: " + c)
+        }
+
+        function questao03()
+        {
+            var precoAVista = prompt("Digite o preço do produto à vista:");
+            var parcela = prompt("Digite a quantidade de parcelas, em 3 ou 5 vezes:");
+
+            if(parcela == 3)
+            {
+                resultado = 1.10 * precoAVista;
+                alert("O total do acréscimo de 10% é de: " + resultado)
+            }
+            else if(parcela == 5)
+            {
+                resultado = 1.20 * precoAVista;
+                alert("O total do acréscimo de 20% é de: " + resultado)
+            }
+            else
+            {
+                alert("É possível parcelar em somente 3 ou 5 vezes!")
+            }
+        }
+
+        function questao04()
+        {
+            var nome;
+            var nota1, nota2, nota3, resultado;
+
+            nome = prompt('Digite o nome do Aluno');
+
+            nota1 = parseInt(prompt('Digite a nota 1 do aluno'));
+            nota2 = parseInt(prompt('Digite a nota 2 do aluno'));
+            nota3 = parseInt(prompt('Digite a nota 3 do aluno'));
+
+            resultado = (nota1 + nota2 + nota3) / 3; 
+
+            if(Resul >= 7)
+            {
+                alert(nome + ", sua média foi de " + resultado + ". Você está aprovado!");
+            }
+            else
+            {
+                alert(nome + ", sua média foi de " + resultado + " Você está reprovado!");
+            }
+        }
+
+        function questao05()
+        {
+            var mes;
+            var nomeMes;
+
+            mes = prompt("Digite um numéro de 1 a 12:") 
+
+            switch (mes) {
+                case "1": alert("Janeiro");
+                    break;
+                case "2": alert("Fevereiro")
+                    break;
+                case "3": alert("Março")
+                    break;
+                case "4": alert("Abriu")
+                    break;
+                case "5": alert("Maio")
+                    break;
+                case "6": alert("Junho")
+                    break;
+                case "7": alert("Julho")
+                    break;
+                case "8": alert("Agosto")
+                    break;
+                case "9": alert("Setembro")
+                    break;
+                case "10": alert("Outubro")
+                    break;
+                case "11": alert("Novembro")
+                    break;
+                case "12": alert("Dezembro")
+                    break;
+                default: alert("Inválido!")
+            }
+        }
+        
+    </script>
+
+</body>
+</html>

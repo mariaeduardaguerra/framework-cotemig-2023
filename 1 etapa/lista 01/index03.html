@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>lista 01 | questão 03</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+
+    <p>3 - A partir do preço à vista de um determinado produto, calcule o preço total a pagar e o valor
+        da prestação mensal, referentes ao pagamento parcelado. Se o pagamento for parcelado
+        em 3 vezes deve ser dado um acréscimo de 10% no total a ser pago. Se o parcelamento
+        for em 5 vezes, o acréscimo será de 20%. Lembrando que são apenas as 2 opções para
+        parcelamento.</p>
+
+    <script src='script.js'>
+
+        var precoAVista = prompt("Digite o preço do produto à vista:");
+        var parcela = prompt("Digite a quantidade de parcelas, em 3 ou 5 vezes:");
+
+        if(parcela == 3)
+        {
+            resultado = 1.10 * precoAVista;
+            alert("O total do acréscimo de 10% é de: " + resultado)
+        }
+        else if(parcela == 5)
+        {
+            resultado = 1.20 * precoAVista;
+            alert("O total do acréscimo de 20% é de: " + resultado)
+        }
+        else
+        {
+            alert("É possível parcelar em somente 3 ou 5 vezes!")
+        }
+
+    </script>
+
+</body>
+</html>

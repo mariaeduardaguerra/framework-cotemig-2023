@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>lista 01 | questão 01</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+
+    <p>1 - Faça um script que entre com o nome e o salário de um funcionário e mostre seu novo
+salário, sabendo que o mesmo teve um aumento de 10%.</p>
+
+    <script>
+
+        // 1- Faça um script que entre com o nome e o salário de um funcionário e mostre seu novo salário,
+        // sabendo que o mesmo teve um aumento de 10%.
+
+        var nome = prompt("digite seu nome:");
+        var salario = parseFloat(prompt("digite seu salário:"));
+        var total;
+
+        total = (salario * 0.10) + salario;
+
+        console.log("seu novo salário é " + total);
+
+        alert("olá " + nome + ", seu novo salário é: " + total);
+
+        if(salario > 1000)
+        {
+            alert("desconto");
+        }      
+
+    </script>
+
+</body>
+</html>

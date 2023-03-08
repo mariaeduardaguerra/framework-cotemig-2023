@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>carnaval - questão 01</title>
+</head>
+
+<body>
+
+    <script>
+        
+        // Elabore um script para efetuar o cálculo da quantidade de litros de bebidas consumida por um determinado bloco durante o carnaval.
+        // O script recebe como entrada a quantidade de packs de bebidas consumidos durante o período.
+        // Considerar que o carnaval possui cinco dias. Considerar que um pack de bebidas tem 12 latas. Sabe-se que cada lata tem 350ml e que 1 litro em 1000ml.
+        // Supondo que cada pack custa R$38.00, informar também o gasto em cerveja do referido bloco. Desenvolver o script com função, onde as mesmas recebem os
+        // parâmetros de entrada e retornam os cálculos.
+
+        var dias = 5;
+        var valor = 38.00;
+        var qntPacks = parseInt(prompt("Digite a quantidade de packs consumidos por dia:"));
+
+        function calcula(qntPacks, dias, valor) {
+            var qntTotalConsumido = ((qntPacks * dias * 12) * 0.35);
+            return (qntTotalConsumido)
+        }
+
+        function calculaTotalGasto(qntPacks, valor, dias) {
+            var totalPagar = (qntPacks * valor * dias);
+            return (totalPagar)
+        }
+
+        console.log(calcula(qntPacks, dias, valor));
+        console.log(calculaTotalGasto(qntPacks, valor, dias));
+
+    </script>
+
+</body>
+
+</html>

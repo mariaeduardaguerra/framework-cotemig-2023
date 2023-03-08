@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>lista 01 | questão 04</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+
+<body>
+
+    <p>4 - Faça um script que leia o nome e as três notas de uma disciplina de um aluno e ao final
+        escreva o nome do aluno, sua média e se ele foi aprovado, sabendo-se que a média para
+        aprovação é igual ou superior a 7.</p>
+
+    <script src='script.js'>
+
+        var nome;
+        var nota1, nota2, nota3, resultado;
+
+        nome = prompt('Digite o nome do Aluno');
+
+        nota1 = parseInt(prompt('Digite a nota 1 do aluno'));
+        nota2 = parseInt(prompt('Digite a nota 2 do aluno'));
+        nota3 = parseInt(prompt('Digite a nota 3 do aluno'));
+
+        resultado = (nota1 + nota2 + nota3) / 3; 
+
+        if(Resul >= 7)
+        {
+            alert(nome + ", sua média foi de " + resultado + ". Você está aprovado!");
+        }
+        else
+        {
+            alert(nome + ", sua média foi de " + resultado + ". Você está reprovado!");
+        }
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lista 02 | questão 04</title>
+  </head>
+
+  <body>
+
+    <script>
+
+      // Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+      // function experiencia(anos)
+      // {
+      // // código aqui
+      // }
+      // //entrada de dados var anosEstudo = ….;
+      // experiencia(anosEstudo);
+      // // De 0 - 1 ano: Júnior
+      // // De 1 - 3 anos: Pleno
+      // // De 3 - 6 anos: Sênior
+      // // De 7 acima: Mestre Jedi
+
+      function experiencia(anos) {
+        switch (true) {
+          case anos >= 0 && anos <= 1:
+            return "Júnior";
+            break;
+          case anos > 1 && anos <= 3:
+            return "Pleno";
+            break;
+          case anos >= 4 && anos <= 6:
+            return "Sênior";
+            break;
+          case anos >= 7:
+            return "Mestre Jedi";
+            break;
+          default:
+            return "Inválido!";
+        }
+      }
+
+      for (var i = -2; i <= 10; i++) {
+        console.log(i + " anos: " + experiencia(i) + ".<br>");
+      }
+
+    </script>
+    
+  </body>
+</html>
