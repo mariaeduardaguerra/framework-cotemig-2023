@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carnaval - Questão 02</title>
+</head>
+
+<body>
+
+    <script>
+        // O Carnaval do Cotemig celebrado hoje terá um concurso onde serão julgadas vários quesitos para determinar a fantasia campeã do Carnaval.
+        // Cada fantasia é avaliada em vários quesitos; em cada quesito, cada aluno recebe cinco notas que variam de 5,0 a 10,0. A nota final do aluno
+        // em um dado quesito é a soma das três notas centrais recebidas pelo aluno, excluindo a maior e a menor das cinco notas.
+        // Como existem muitos alunos e muitos quesitos, você vai escrever um programa que, dadas as 5 notas, calcula a sua nota final num dado quesito.
+        // Quesitos: criatividade, originalidade, elegância, acabamento e conservação.
+
+        var quesito = ["criatividade", "originalidade", "elegancia", "acabamento", "conservacao"];
+        soma = 0;
+
+        for (i = 0; i < 5; i++) {
+            notas[i] = parseInt(prompt("Digite a nota para cada quesito:"))
+        }
+
+        notas.sort(); // ordenação
+        notas.pop(); // remoção do último item
+        notas.unshift(); // remoção do primeiro item
+
+        for (i = 0; i < notas.length; i++) {
+            soma = notas[i] + soma;
+        }
+
+        console.log(soma);
+
+    </script>
+
+
+</body>
+
+</html>

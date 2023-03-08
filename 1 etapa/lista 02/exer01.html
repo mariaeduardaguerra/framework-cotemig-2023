@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // Você estava criando uma array com as cores do arco-íris, e se esqueceu de algumas cores. As cores padrão de um arco-íris são normalmente listadas nesta ordem:
+    // Arco_iris = ["Vermelho", "Laranja", "Amarelo", "Verde", "Azul", "Roxo"];
+    // Mas você fez assim:
+    // Arco_iris = ["Vermelho", "Laranja", "Marrom", "Azul"];
+    // Usando somente o método splice(), insira as cores que faltam na array e remova a cor que não faz parte do arco-íris padrão.
+
+    let arrayInserirCores = ["Vermelho", "Laranja", "Marrom", "Azul"];
+    let itensRemovidos = arrayInserirCores.splice(2,1); // removendo o item "Marrom" do array
+
+    console.log(arrayInserirCores);
+    console.log("Itens removidos: " + itensRemovidos);
+
+    arrayInserirCores.splice(2, 0, "Amarelo", "Verde");
+    arrayInserirCores.splice(5, 0, "Roxo");
+    console.log(arrayInserirCores);
+
+    </script>
+</body>
+</html>
