@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+body {
+    background-color: black;
+    overflow-y: hidden;
+    display: grid;
+    place-items: center;
+    margin-top: 25%;
+}
+
+/* .container > .child01 > button {
+    font-family: 'Poppins', sans-serif;
+    background-color: aqua;
+} */
+
