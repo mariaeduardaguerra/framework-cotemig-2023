@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lista 03 | questão 05</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Utilize o mesmo array de produtos da atividade 4, mas dessa vez, você só quer que fique no array
+        // os produtos com a categoria “alimento”: Faça um filtro utilizando o método filter() para retornar o
+        // array dos produtos da categoria “alimento”.
+
+        function questao05 ()
+        {
+
+            const produtos = [
+                { id: 1, categoria: 'limpeza', nome: 'amaciante' },
+                { id: 2, categoria: 'limpeza', nome: 'detergente' },
+                { id: 3, categoria: 'alimento', nome: 'ovo' },
+                { id: 4, categoria: 'alimento', nome: 'alface' },
+            ]
+
+            let categoriaAlimento = produtos.filter(produtos => produtos.categoria == 'alimento')
+
+            console.log(categoriaAlimento)
+
+        }
+
+    </script>
+
+</body>
+
+</html>

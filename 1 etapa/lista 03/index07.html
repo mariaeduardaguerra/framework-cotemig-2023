@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lista 03 | questão 07</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Crie um array de objetos produtos com nome e preço, agora você irá adicionar um
+        // desconto de 10% no preço desses produtos, utilize o método map() e object.keys().
+
+        function questao07() {
+
+            let produtos = [
+                {
+                    nome: "passatempo",
+                    preco: 3.50
+                },
+
+                {
+                    nome: "toddynho",
+                    preco: 2.30
+                },
+
+                {
+                    nome: "nescau",
+                    preco: 10.20
+                }
+            ]
+
+            console.log(Object.keys(produtos));
+
+            let desconto = []
+
+            produtos.map((produtos) =>
+            {
+                desconto.push(produtos.preco)
+            })
+
+            desconto = desconto.map(x => x - (x * 0.10))
+
+            console.log(desconto);
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

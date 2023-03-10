@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lista 03 | questão 04</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Imagine a situação onde você tem uma lista de produtos e precisa extrair apenas o id de cada um.
+        // const produtos = [
+        // { id: 1, categoria: 'limpeza', name: 'Amaciante' },
+        // { id: 2, categoria: 'limpeza', name: 'Detergente' },
+        // { id: 3, categoria: 'alimento', name: 'ovo' },
+        // { id: 4, categoria: 'alimento', name: 'alface' },
+        // ] 
+        // Utilize o método map(), para retornar um array contendo somente os ids.
+
+        function questao04()
+        {
+
+            const produtos = [
+                { id: 1, categoria: 'limpeza', nome: 'amaciante' },
+                { id: 2, categoria: 'limpeza', nome: 'detergente' },
+                { id: 3, categoria: 'alimento', nome: 'ovo' },
+                { id: 4, categoria: 'alimento', nome: 'alface' },
+            ]
+
+            let arrayRetornaId = []
+
+            produtos.map((produtos) => {
+                arrayRetornaId.push(produtos.id)
+            })
+
+            console.log(arrayRetornaId)
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

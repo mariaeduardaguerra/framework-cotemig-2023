@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lista 03 | questão 08</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Dado o array abaixo que armazena os funcionários de uma empresa.
+
+        // Const funcionários = [{
+        //   Nome: 'Han Solo',
+        //   Departamento: 'Financeiro',
+        //   Salario: 5000
+        // }, {
+        //   Nome: 'Luke',
+        //   Departamento: 'Financeiro',
+        //   Salario: 15000
+        // }, {
+        //   Nome: 'Ben',
+        //   Departamento: 'Marketing',
+        //   Salario: 2000
+        // }, {
+        //   Nome: 'Leia',
+        //   Departamento: 'Marketing',
+        //   Salario: 10000
+        // }, {
+        //   Nome: 'Rey',
+        //   Departamento: 'Financeiro',
+        //   Salario: 2500
+        // }]
+
+        // Faça um scprit que retorne o valor que o Departamento Financeiro iria receber ao todo se déssemos 50% de aumento para eles. Para saber essa informação, nós precisaríamos: 
+        // 1) filtrar do array quais são os funcionários do Departamento Financeiro,
+        // 2) adicionar 50% de aumento em seus salários e 
+        // 3) fazer a somatória total desses salários.
+
+
+        function questao08()
+        {
+
+            const funcionarios = [
+                {
+                    nome: "han solo",
+                    departamento: "financeiro",
+                    salario: 5000
+                },
+
+                {
+                    nome: "luke",
+                    departamento: "financeiro",
+                    salario: 15000
+                },
+
+                {
+                    nome: "ben",
+                    departamento: "marketing",
+                    salario: 2000
+                },
+
+                {
+                    nome: "leia",
+                    departamento: "marketing",
+                    salario: 10000
+                },
+
+                {
+                    nome: "rey",
+                    departamento: "financeiro",
+                    salario: 2500
+                },
+            ]
+
+            let filtroFinanceiro = funcionarios.filter(funcionarios => funcionarios.departamento == "financeiro")
+
+            console.log(filtroFinanceiro)
+
+            let salarioFinanceiro = []
+
+            filtroFinanceiro.map((filtroFinanceiro) => {
+                salarioFinanceiro.push(filtroFinanceiro.salario)
+            })
+
+            console.log(salarioFinanceiro)
+
+            let aumento = salarioFinanceiro.map(x => x + (x / 2))
+
+            console.log("o salário novo do departamento financeiro será -> " + aumento)
+            
+        }
+
+    </script>
+
+</body>
+
+</html>

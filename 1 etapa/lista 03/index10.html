@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>lista 03 | questão 10</title>
+</head>
+
+<body>
+
+    <script>
+
+        // Crie um array misto com números positivos e negativos(informados pelo usuário, enquanto ele quiser inserir dados)
+        // e verifique e identifique quais são os elementos negativos e quantos desses elementos você encontrou.
+        // Ex: Array = [11, -4, 6, -3, 12, 1, 8, -7, -10]
+        // Saída: [-4,-3,-7,-10]  
+        // Quantidade: 4 itens.
+
+
+        function questao10() {
+
+            let numeros = []
+            let verdadeiro = true
+
+            while (verdadeiro == true)
+            {
+                let digitarNum = (prompt("digite números negativos e positivos da sua escolha. digite >PARE< para parar."))
+
+                if (digitarNum == "PARE")
+                {
+                    verdadeiro = false
+                }
+                else
+                {
+                    numeros.push(parseInt(digitarNum))
+                }
+            }
+
+            console.log(numeros)
+
+            let negativos = numeros.filter(x => x < 0)
+
+            if (negativos == "")
+            {
+                console.log("números negativos não foram digitados!")
+            }
+            else
+            {
+                console.log(negativos)
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
