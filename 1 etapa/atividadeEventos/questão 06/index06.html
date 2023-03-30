@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>atividade EVENTOS - questão 06</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style06.css'>
+</head>
+
+<!-- Crie uma função que verifica se um número inteiro passado como parâmetro
+é divisível por 3 e 5 ao mesmo tempo, o script só finaliza quando o usuário digitar
+0(zero), não pode receber números negativos como entrada. -->
+
+<body>
+
+    <main>
+
+        <div class="container">
+
+            <label for="#">digite um número inteiro e positivo: <br> <span>(digite 0 para finalizar)</span></label>
+            <input type="number" id="numero" onfocus="this.value='';">
+            <button id="btnVerificar">Verificar</button>
+            <button id="btnLimpar">Limpar</button>
+            <h1 id="resultado"></h1>
+            
+        </div>
+
+    </main>
+
+    <script src='script06.js'></script>
+
+</body>
+
+</html>

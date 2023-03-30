@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+  }
+  
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(55,55,116,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.container{
+    display: flex;
+    flex-direction: column;
+    /* background: linear-gradient(45deg, #200122, #6f0000); */
+    /* background: linear-gradient(to left, #5B2C6F 50%, #4CE2C9 75%); */
+    background-color: white;
+    text-align: center;
+    width: 340px;
+    height: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+
+.input input {
+    width: 150px;
+    height: 35px;
+    border-radius: 15px;
+    border:none;
+    outline: 0;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color: black;
+    /* border-bottom: solid 1px white; */
+    /* border: solid white 1px; */
+    box-shadow: 0px 0px 10px black;
+}
+
+.input label {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    height: 40px;
+    margin-right: 2.5rem;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    /* background: linear-gradient(to left, rgba(55,55,116,1) 35%, rgba(0,212,255,1) 100%); */
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    width: 100px;
+    height: 30px;
+    /* border: solid black 0.5px; */
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: linear-gradient(to right, rgba(55,55,116,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.result{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    width: 210px;
+    height: 100px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px black;
+    background: transparent;
+    /* background: linear-gradient(to left, rgba(55,55,116,1) 35%, rgba(0,212,255,1) 100%); */
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+}

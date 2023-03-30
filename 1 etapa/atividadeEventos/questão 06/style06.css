@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+.container{
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container label {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.container label span {
+    font-size: 16px;
+}
+
+.container input {
+    margin-top: 2rem;
+    height: 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+}
+
+main .container .btns {
+    display: flex;
+    flex-direction: row;
+}
+
+#btnVerificar {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #272822;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+#btnLimpar {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 15px;
+    border: none;
+    background-color: #272822;
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+#resultado {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: blueviolet;
+    margin-top: 2rem;
+}
+
+#btnVerificar:hover {
+    color: greenyellow;
+}
+
+#btnLimpar:hover {
+    color: red;
+}
