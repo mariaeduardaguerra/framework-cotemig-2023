@@ -1,0 +1,13 @@
+*
+
+.container{
+    height: 98vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container select{
+    width: 10%;
+}

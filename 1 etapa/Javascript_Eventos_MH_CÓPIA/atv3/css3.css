@@ -1,0 +1,30 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container p {
+    margin:  0px 0px 10px 0px;
+}
+
+.container p a{
+    text-decoration: none;
+
+}
+
+
+a{
+    color: rgb(0, 187, 62);
+    font-weight: 900;
+}

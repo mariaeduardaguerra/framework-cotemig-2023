@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container button {
+    width: 10vw;
+    font-size: 1em;
+    color: black;
+    font-weight: 900;
+}
+
+#btn-vermelho{
+    background: red;
+}
+#btn-verde{
+    background: green;
+}
+#btn-azul{
+    background: blue;
+}
+#btn-amarelo{
+    background: yellow;
+}
