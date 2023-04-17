@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+    /* background-color: black; */
+    /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+    background: linear-gradient(to right, #0f0c29, #130f40);
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main, .container {
+    text-align: center;
+}
+
+.container {
+    width: 190vh;
+    height: 93vh;
+    border: solid white 3px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px black;
+}
+
+main .container h1 {
+    color: white;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.div-insira label {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 40%;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+.div-insira {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+}
+
+.div-insira .divs-inputs input, select {
+    margin-top: 1rem;
+}
+
+.div-nomes-semana label {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.div-nomes-semana {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 11%;
+    margin-top: 2rem;
+}
+
+table tr td {
+    color: black;
+    border-radius: 20px;
+    border: solid #0f0c29 10px;
+}
+
+td {
+    background-color: rgb(219, 213, 213);
+    height: 60vh;
+}

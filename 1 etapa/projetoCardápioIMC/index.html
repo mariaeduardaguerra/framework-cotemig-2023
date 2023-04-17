@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Projeto Cardápio e IMC</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    
+    <main>
+        <div class="container">
+
+            <h1>cardápio | IMC</h1>
+
+            <div class="div-insira">
+
+                <div class="divs-inputs" id="nome-produto">
+                    <label for="">insira o produto a ser cadastrado:</label>
+                    <input type="text" required>
+                </div>
+
+                <div class="divs-inputs" id="dia-semana">
+                    <label for="">selecione em qual dia da semana:</label>
+                    <select name="diaSemana" id="select-dia-semana">
+                        <option value="">...</option>
+                        <option value="segunda">segunda-feira</option>
+                        <option value="terça">terça-feira</option>
+                        <option value="quarta">quarta-feira</option>
+                        <option value="quinta">quinta-feira</option>
+                        <option value="sexta">sexta-feira</option>
+                        <option value="sábado">sábado</option>
+                        <option value="domingo">domingo</option>
+                      </select>
+                </div>
+
+            </div>
+
+            <div class="div-main-output">
+
+                <div class="div-nomes-semana">
+                    <label>segunda</label>
+                    <label>terça</label>
+                    <label>quarta</label>
+                    <label>quinta</label>
+                    <label>sexta</label>
+                    <label>sábado</label>
+                    <label>domingo</label>
+                </div>
+
+                <div id="table-output">
+
+                    <table border="0" width="100%" height="5%">
+                        <tr>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                            <td>.</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src='script.js'></script>
+
+</body>
+
+</html>
