@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <title>atividade 02 FETCH países</title>
+</head>
+    
+<body>
+
+  <!-- <h1>Desafio 02</h1> -->
+
+  <main>
+
+    <div class="div-continent">
+      <button class="continent-button" id="btn-africa" data-continent="Africa" onclick="filterContinent('Africa')">África</button>
+    <button class="continent-button" id="btn-america" data-continent="America" onclick="filterContinent('America')">América</button>
+    <button class="continent-button" id="btn-antartica" data-continent="Antartica" onclick="filterContinent('Antartica')">Antártica</button>
+    <button class="continent-button" id="btn-asia" data-continent="Asia" onclick="filterContinent('Asia')">Ásia</button>
+    <button class="continent-button" id="btn-europe" data-continent="Europe" onclick="filterContinent('Europe')">Europa</button>
+    <button class="continent-button" id="btn-oceania" data-continent="Oceania" onclick="filterContinent('Oceania')">Oceania</button>
+    </div>
+
+    <div class="main-countries-container">
+    
+      <!-- table ESQUERDA (todos os países) -->
+      <div class="countries-list" id="left-container">
+        <h5>Países (<span id="span-all-countries"></span>)</h5>
+        <h6>Pupulação total: <span id="span-all-total-population"></span></h6>
+        <table id="table-all-countries">
+          <!-- resultado (todos os países) -->
+        </table>
+      </div>
+
+      <!-- table DIREITA (países favoritos) -->
+      <div class="countries-list" id="right-container">
+        <h5>Países Favoritos (<span id="span-favorite-countries"></span>)</h5>
+        <h6>Pupulação total: <span id="span-favorites-total-population"></span></h6>
+        <table id="table-favorite-countries">
+          <!-- resultado (países favoritos) -->
+        </table>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
